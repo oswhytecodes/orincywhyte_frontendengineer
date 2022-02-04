@@ -12,6 +12,8 @@ module.exports = {
 'accentgreen': '#66da42',
     },
     screens: {
+      sm: '480px',
+      md: '768px',
       lg: '1124px',
       xl: '1124px',
       '2xl': '1124px',
