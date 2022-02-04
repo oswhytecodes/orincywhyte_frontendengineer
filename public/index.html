@@ -12,32 +12,34 @@
 <body class="">
     
   <!-- Header  -->
-  <header class="bg-accentgreen/75 p-4">
+  <header class="bg-accentgreen p-4">
     <nav class="container w-full flex justify-between items-center">
         <div >
             <a class="flex justify-center items-center font-sans" href="#">orincy whyte </a>
         </div>
+        <!-- Burger Menu -->
+      <input id="menu-btn" id="menu-btn" type="checkbox" />
+      <label class="lg:hidden" id="menu-icon" for="menu-btn">
+        <span  id="nav-icon"> </span>
+      </label>
+      <!-- Burger Menu -->
         <div >
-            <ul class="hidden sm:flex justify-between items-center ">
+            <ul id="menu" class="hidden lg:flex justify-between items-center ">
                 <li class="mr-12"> <a href="#"> Home </li>
                 <li class="mr-12"> <a href="#"> About </li>
                 <li> <a href="#"> Contact </li>
             </ul> 
         </div>
         <div>
-            <a class="hidden md:flex" href="#">front-end engineer </a>
+            <a class="hidden lg:flex" href="#">front-end engineer </a>
         </div>
-        <div id="burger-menu">
-            <input class="" type="checkbox" id="menu-btn" >
-            <label class="" for="menu-btn">
-                <span>  </span>
-            </label>
+
         </div>
     </nav>
 </header>
 <main>
 <section class="grid">
-    <img class="m-auto flex items-center" src="images/hero.svg" alt="">
+    <img class="m-auto mt-12 flex justify-start items-center" src="images/hero.svg" alt="">
 </section>
 
 </main>
