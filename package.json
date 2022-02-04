@@ -1,0 +1,23 @@
+{
+  "name": "codecademyportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind -i src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oswhyteknits/orincywhyte_frontendengineer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oswhyteknits/orincywhyte_frontendengineer/issues"
+  },
+  "homepage": "https://github.com/oswhyteknits/orincywhyte_frontendengineer#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.18"
+  }
+}
