@@ -5,34 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Orincy Whyte - Frontend Engineer</title>
 </head>
 
-<body>
+<body class="">
+    
+  <!-- Header  -->
+  <header class="bg-accentgreen/75 p-4">
+    <nav class="container w-full flex justify-between items-center">
+        <div >
+            <a class="flex justify-center items-center font-sans" href="#">orincy whyte </a>
+        </div>
+        <div >
+            <ul class="hidden sm:flex justify-between items-center ">
+                <li class="mr-12"> <a href="#"> Home </li>
+                <li class="mr-12"> <a href="#"> About </li>
+                <li> <a href="#"> Contact </li>
+            </ul> 
+        </div>
+        <div>
+            <a class="hidden md:flex" href="#">front-end engineer </a>
+        </div>
+        <div id="burger-menu">
+            <input class="" type="checkbox" id="menu-btn" >
+            <label class="" for="menu-btn">
+                <span>  </span>
+            </label>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="grid">
+    <img class="m-auto flex items-center" src="images/hero.svg" alt="">
+</section>
 
-    <!-- Header  -->
-    <header>
-        <nav class="container flex justify-between items-center text-blue-400">
-            <div>
-                <a href="#">orincy whyte </a>
-            </div>
-            <div >
-                <ul class="flex justify-between items-center">
-                    <li class="ml-12"> <a href="#"> Home </li>
-                    <li class="ml-12"> <a href="#"> About </li>
-                    <li> <a href="#"> Contact </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section>
-        </section>
-    </main>
-    <footer>
-    </footer>
+</main>
 </body>
 
 </html>

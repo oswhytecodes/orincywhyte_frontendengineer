@@ -1,11 +1,15 @@
 module.exports = {
+ 
   content: [
     './public/**/*.{html,js}',
   ],
   theme: {
     container: {
-      center: true,
+      center:true,
       padding: '2rem',
+    }, 
+    colors: {
+'accentgreen': '#66da42',
     },
     screens: {
       lg: '1124px',
@@ -13,13 +17,11 @@ module.exports = {
       '2xl': '1124px',
     },
     fontFamily: {
-      cursive: ['Sacramento', 'cursive'],
+      cursive: ['Sacramento','cursive'],
       sans: ['Montserrat', 'sans-serif'],
-    },
-    colors: {
-      'accentgreen': '#66da42',
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+  ],
 }
