@@ -56,3 +56,8 @@
 #menu-btn {
     display: none;
     }
+/* Animation Background */
+
+#animation-blobs{
+    z-index: -1;
+}
