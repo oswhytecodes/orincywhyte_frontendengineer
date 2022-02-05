@@ -17361,6 +17361,20 @@ video {
   max-height: 240px;
 }
 
+#menu-btn:checked ~ #menu-icon #nav-icon {
+  background: transparent;
+}
+
+#menu-btn:checked ~ #menu-icon #nav-icon:before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn:checked ~ #menu-icon #nav-icon:after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
 #nav-icon {
   position: relative;
   background-color: black;
@@ -17398,6 +17412,240 @@ video {
 
 #menu-btn {
   display: none;
+}
+
+/* Animation Background */
+
+#animation-blobs{
+  z-index: -1;
+}
+
+@media screen and (max-width: 425px) {
+  #animation-blobs {
+    max-width: 425px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #animation-blobs {
+    max-width: 768px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #animation-blobs {
+    max-width: 1024px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  #animation-blobs {
+    max-width: 2560px;
+    overflow: hidden;
+  }
+}
+
+#blob_one {
+  transition: transform 7s ease-out ;
+  animation: blobone 8s alternate-reverse infinite;
+}
+
+@-webkit-keyframes blobone {
+  0% {
+    transform: translate(40px, 490px);
+  }
+
+  50% {
+    transform: translate(300px, -100px);
+  }
+
+  100% {
+    transform: translate(0px, 200px);
+  }
+}
+
+@keyframes blobone {
+  0% {
+    transform: translate(40px, 490px);
+  }
+
+  50% {
+    transform: translate(300px, -100px);
+  }
+
+  100% {
+    transform: translate(0px, 200px);
+  }
+}
+
+#blob_two {
+  transition: transform 9s linear ;
+  animation: blobtwo 10s alternate-reverse infinite;
+}
+
+@-webkit-keyframes blobtwo{
+  0% {
+    transform: translate(149px, 370px);
+  }
+
+  80% {
+    transform: translate(400px, 430px);
+  }
+
+  100% {
+    transform: translate(0px, 20px);
+  }
+}
+
+@keyframes blobtwo{
+  0% {
+    transform: translate(149px, 370px);
+  }
+
+  80% {
+    transform: translate(400px, 430px);
+  }
+
+  100% {
+    transform: translate(0px, 20px);
+  }
+}
+
+#blob_three {
+  transition: transform 7s ease-in-out ;
+  -webkit-animation: blobthree 12s alternate infinite;
+          animation: blobthree 12s alternate infinite;
+}
+
+@-webkit-keyframes blobthree{
+  0% {
+    transform: translate(-49px, 120px);
+  }
+
+  40% {
+    transform: translate(90px, 30px);
+  }
+
+  100% {
+    transform: translate(350px, 410px);
+  }
+}
+
+@keyframes blobthree{
+  0% {
+    transform: translate(-49px, 120px);
+  }
+
+  40% {
+    transform: translate(90px, 30px);
+  }
+
+  100% {
+    transform: translate(350px, 410px);
+  }
+}
+
+#blob_four {
+  transition: transform 14s ease-out ;
+  animation: blobfour 10s alternate-reverse infinite;
+}
+
+@-webkit-keyframes blobfour {
+  0% {
+    transform: translate(76px, 10px);
+  }
+
+  80% {
+    transform: translate(-30px, 200px);
+  }
+
+  100% {
+    transform: translate(50px, 20px);
+  }
+}
+
+@keyframes blobfour {
+  0% {
+    transform: translate(76px, 10px);
+  }
+
+  80% {
+    transform: translate(-30px, 200px);
+  }
+
+  100% {
+    transform: translate(50px, 20px);
+  }
+}
+
+#blob_five {
+  transition: transform 17s ease-out ;
+  -webkit-animation: blobfive 10s alternate infinite;
+          animation: blobfive 10s alternate infinite;
+}
+
+@-webkit-keyframes blobfive{
+  0% {
+    transform: translate(370px, 149px);
+  }
+
+  20% {
+    transform: translate(-76px, 40px);
+  }
+
+  100% {
+    transform: translate(0px, 320px);
+  }
+}
+
+@keyframes blobfive{
+  0% {
+    transform: translate(370px, 149px);
+  }
+
+  20% {
+    transform: translate(-76px, 40px);
+  }
+
+  100% {
+    transform: translate(0px, 320px);
+  }
+}
+
+#blob_six {
+  transition: transform 7s ease-out ;
+  animation: blobsix 8s alternate-reverse infinite;
+}
+
+@-webkit-keyframes blobsix {
+  0% {
+    transform: translate(0px, -40px);
+  }
+
+  50% {
+    transform: translate( -10px, 290px);
+  }
+
+  100% {
+    transform: translate(150px, 485px);
+  }
+}
+
+@keyframes blobsix {
+  0% {
+    transform: translate(0px, -40px);
+  }
+
+  50% {
+    transform: translate( -10px, 290px);
+  }
+
+  100% {
+    transform: translate(150px, 485px);
+  }
 }
 
 @media (min-width: 480px) {

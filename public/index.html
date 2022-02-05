@@ -24,8 +24,8 @@
             </label>
             <!-- Burger Menu -->
             <div>
-                <ul id="menu" class="hidden lg:flex justify-evenly items-center">
-                    <li class="mr-6"> <a href="#"> Home </li>
+                <ul id="menu" class="hidden lg:flex justify-between items-center">
+                    <li class="mr-6"> <a href="#"> Projects </li>
                     <li class="mr-6"> <a href="#"> About </li>
                     <li> <a href="#"> Contact </li>
                 </ul>
@@ -39,51 +39,103 @@
     </header>
 
 
-    <main>
+    <main class="m-auto items-center">
 
-   
+
         <section class="container z-50 ">
             <div class="md:grid grid-cols-4 content-center items-center">
 
-                <img class="m-auto z-50 mt-12 flex justify-start items-center  col-start-1 col-end-4 auto-rows-auto"
-                    src="images/hero.svg" alt="Orincy Whyte - Front End Engineer">
+                <img class="m-auto z-50 mt-12 flex justify-start items-center 
+                 col-start-1 col-end-4" src="images/hero.svg" alt="Orincy Whyte - Front End Engineer">
 
 
-                <div class="z-10 grid content-center col-start-4 col-end-5 auto-rows-auto ">
+                <div class="z-10 md:grid content-center col-start-4 col-end-5 ">
 
-                    <div class="mystacks_grid flex-col mt-10  ">
+                    <div id="mystacks_grid" class=" flex-col items-center justify-around mt-10  ">
                         <div class="flex items-center justify-start">
                             <img width="40px" src="images/html.svg" alt="Html5 logo icon">
-                            <p class="ml-4"> Learning Html5 </p>
+                            <p class="ml-4 text-xs md:text-base"> Learning Html5 </p>
                         </div>
                         <div class="flex items-center justify-start mt-2">
                             <img width="40px" src="images/css.svg" alt="CSS3 logo icon">
-                            <p class="ml-4"> Learning Css3 </p>
+                            <p class="ml-4 text-xs md:text-base""> Learning Css3 </p>
                         </div>
                         <div class="flex items-center justify-start mt-2">
                             <img width="40px" src="images/js.svg" alt="JavaScript logo icon">
-                            <p class="ml-4"> Learning JavaScript ES6 </p>
+                            <p class="ml-4 text-xs md:text-base"> Learning JavaScript ES6 </p>
                         </div>
                         <div class="flex items-center justify-start mt-2">
                             <img width="40px" src="images/tailwindcss.svg" alt="TailwindCSS logo icon">
-                            <p class="ml-4"> Learning Tailwind CSS </p>
+                            <p class="ml-4 text-xs md:text-base"> Learning Tailwind CSS </p>
                         </div>
                     </div>
                 </div>
-              
 
-        </section>
-        <div class="">
-            <div id="animation-blobs" class="flex-wrap absolute top-20 -z-10">
-                <img id="blobs_one" width="200px" class="flex-row inline-block" src="images/blob3.svg" alt="circle svg">
-                <img id="blobs_two" width="200px" class="flex-row inline-block" src="images/blob4.svg" alt="circle svg">
-                <img id="blobs_three" width="200px" class="flex-row inline-block" src="images/blob1.svg" alt="circle svg">
-                <img id="blobs_four" width="200px" class="flex-row inline-block" src="images/blob6.svg" alt="circle svg">
-                <img id="blobs_five" width="200px" class="flex-row inline-block" src="images/blob7.svg" alt="circle svg">
-                <img id="blobs_six" width="200px" class="flex-row inline-block" src="images/blob9.svg" alt="circle svg">
+
+        </section class="container">
+        <div class="container overflow-hidden">
+            <div id="animation-blobs" class="flex-wrap absolute top-20 -z-10 opacity-30">
+                <img id="blob_one" width="200px" class="flex-row inline-block" src="images/blob3.svg" alt="circle svg">
+                <img id="blob_two" width="200px" class="flex-row inline-block" src="images/blob4.svg" alt="circle svg">
+                <img id="blob_three" width="200px" class="flex-row inline-block" src="images/blob1.svg"
+                    alt="circle svg">
+                <img id="blob_four" width="200px" class="flex-row inline-block" src="images/blob6.svg" alt="circle svg">
+                <img id="blob_five" width="200px" class="flex-row inline-block" src="images/blob7.svg" alt="circle svg">
+                <img id="blob_six" width="200px" class="flex-row inline-block" src="images/blob9.svg" alt="circle svg">
             </div>
         </div>
     </main>
+    <section class=" container mt-28 md:flex md:max-w-lg gap-8 justify-between m-auto" id="projects">
+        <h2>projects</h2>
+
+        <div id="cards">
+
+
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section id="about" class=" container mt-28 md:flex md:max-w-lg gap-8 justify-between m-auto">
+        <h2>about</h2>
+        <div>
+        <div id="greenbox" class="w-32 h-48 bg-accentgreen grid absolute"> </div>
+        <img  class="top-12 left-10 relative w-24 sm:max-w-xs md:w-32 " src="images/about.jpg" alt="">
+    </div>
+
+        <div>
+            <p class="text-xs max-w-xs ml-12 mt-20 md:max-w-md md:text-sm md:mt-0  ">
+                As I am currently learning and growing as a web developer, I am ready to get my feet wet in the tech
+                industry. I am a quick learner, creative and constantly building; a multitasker who is also courteous
+                and kind.
+
+                My strongest skill is being able to build something useful from scratch. I build professional logos
+                starting from a blank sketchbook, I build knitted and crocheted items from yarn and now I can build a
+                webpage from a blank code editor. I love being creative and showcasing my hard work.
+            </p>
+        </div>
+    </section>
+    <section id="contact">
+
+    </section>
+
+
+     <!-- Header  -->
+     <footer class="bg-accentgreen mt-36 py-4">
+        <nav class="container flex justify-between items-center">
+            <div>
+                <a class="flex justify-items-start items-center font-sans" href="#">orincy whyte </a>
+            </div>
+                <div class="flex justify-between items-center">
+               <a href=""><img src="images/white_facebook.svg" alt=""></a>
+               <a href=""><img src="images/white_twitter.svg" alt=""></a>
+               <a href=""><img src="images/white_instagram.svg" alt=""></a>
+               </div>            
+            <div>
+                <a class="flex justify-end" href="#">front-end engineer </a>
+            </div>
+
+        </nav>
+    </footer>
 </body>
 
 </html>
