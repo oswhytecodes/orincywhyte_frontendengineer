@@ -7,45 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Orincy Whyte - Frontend Engineer</title>
+    <script src="main.js" defer></script>
 </head>
 
 <body class="font-sans">
-
     <!-- Header  -->
-    <header class="bg-accentgreen py-4">
-        <nav class="container flex justify-between items-center">
+    <header class="bg-accentgreen shadow-md py-4">
+        <nav class="container md:flex md:justify-between md:items-center ">
             <div>
-                <a class="text-2xl"href="#">orincy whyte </a>
+                <a class="text-2xl" href="index.html">orincy whyte </a>
             </div>
+
+           
             <!-- Burger Menu -->
-            <input id="menu-btn" id="menu-btn" type="checkbox" />
-            <label class="md:hidden" id="menu-icon" for="menu-btn">
+            <div id="burger-menu">
                 <span id="nav-icon"> </span>
-            </label>
+            </div>
+            <!-- ====  -->
+
             <!-- Menu List -->
-            <div  class="m-auto">
-                <ul id="menu"  class=" hidden lg:flex lg:justify-center lg:items-center bg-accentgreen">
-                    <li class=""> <a href="projects.html"> Projects </li>
-                    <li class="lg:ml-12"> <a href="about.html"> Connect </li>
+            <div class="m-auto">
+                <ul id="menu" class="flex justify-center items-center bg-accentgreen">
+                    <li class="p-4"> <a href="projects.html"> Projects </a> </li>
+                    <li class="lg:ml-12"> <a href="about.html"> Connect </a> </li>
                 </ul>
             </div>
+
             <div>
-                <a class="hidden md:flex justify-end" href="#">front-end engineer </a>
+                <a class="hidden md:flex justify-end" href="https://github.com/oswhyteknits">front-end engineer </a>
             </div>
         </nav>
     </header>
 
 
+
     <main class="m-auto items-center">
-
-
         <section class="container z-50 ">
             <div class="md:grid grid-cols-4 content-center items-center">
 
-                <img class="m-auto z-50 mt-20 flex justify-center items-center 
-                 sm:col-start-1 sm:col-end-4" src="images/hero.svg" alt="Orincy Whyte - Front End Engineer">
-
-<!-- Stacks -->
+                <div class="flex justify-center items-center 
+             sm:col-start-1 sm:col-end-4"> <a href="projects.html"> <img class="m-auto z-50 mt-20 "
+                            src="images/hero.svg" alt="Orincy Whyte - Front End Engineer"> </a>
+                </div>
+                <!-- Stacks -->
                 <div class="z-50 m-auto flex justify-center  sm:grid sm:col-start-4 sm:col-end-5 ">
                     <div id="mystacks_grid" class="flex-col items-center justify-around mt-10  ">
                         <div class="flex items-center justify-start">
@@ -61,13 +65,13 @@
                             <p class="ml-4 text-xs sm:text-base"> Tailwind Whisperer </p>
                         </div>
                         <div class=" flex items-center justify-start mt-2">
-                                <img width="40px" src="images/js.svg" alt="JavaScript logo icon">
-                                <p class="ml-4 text-xs sm:text-base"> JavaScript Defender </p>
+                            <img width="40px" src="images/js.svg" alt="JavaScript logo icon">
+                            <p class="ml-4 text-xs sm:text-base"> JavaScript Defender </p>
                         </div>
                     </div>
                 </div>
         </section>
-<!-- animation-blobs - Full-height to fill screen, with overflow hidden -->
+        <!-- animation-blobs - Full-height to fill screen, with overflow hidden -->
         <div class="">
             <div id="animation-blobs" class="flex-wrap h-full overflow-hidden absolute top-20 -z-10 opacity-30">
                 <img id="blob_one" width="200px" class="flex-row inline-block" src="images/blob3.svg" alt="circle svg">
@@ -84,20 +88,25 @@
     <footer class="bg-accentgreen  mt-36 py-4">
         <nav class="container flex flex-wrap justify-center items-center">
             <div>
-                <a class=" justify-items-start items-center font-sans" href="#">orincy whyte </a>
+                <a class=" justify-items-start items-center font-sans" href="index.html">orincy whyte </a>
             </div>
             <div class="flex m-auto max-w-sm justify-center items-center z-50">
-                <a href=""><img width="20px" class="mr-4" src="images/github.svg" alt="github icon"></a>
-                <a href=""><img width="20px" class="mr-4" src="images/instagram.svg" alt="instagram icon"></a>
-                <a href=""><img width="20px" class="mr-4" src="images/linkedin.svg" alt="linkedin icon"></a>
-                <a href="youtube icon"><img width="20px" src="images/youtube.svg" alt=""></a>
+                <a href="https://github.com/oswhyteknits"><img width="20px" class="mr-4" src="images/github.svg"
+                        alt="github icon"></a>
+                <a href="https://www.instagram.com/orincywhytedesigns/"><img width="20px" class="mr-4"
+                        src="images/instagram.svg" alt="instagram icon"></a>
+                <a href="https://www.linkedin.com/in/orincy-whyte-432a34142/"><img width="20px" class="mr-4"
+                        src="images/linkedin.svg" alt="linkedin icon"></a>
+                <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg"><img width="20px"
+                        src="images/youtube.svg" alt="youtube icon"></a>
             </div>
             <div>
-                <a class="flex justify-end" href="#">front-end engineer </a>
+                <a class="flex justify-end" href="https://github.com/oswhyteknits">front-end engineer </a>
             </div>
 
         </nav>
     </footer>
+   
 </body>
 
 </html>

@@ -17346,85 +17346,125 @@ video {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
-/* BURGER BUTTON MOBILE */
+/* =========== hamburger ========== */
 
-#menu-icon {
-  padding: 1em 2em;
-  right: 6px;
-  top: 14px;
-  cursor: pointer;
+#burger-menu {
   position: absolute;
+  padding: 1em 2em;
+  cursor: pointer;
+  top: 12px ;
+  right: 10px ;
 }
 
-#menu {
-  position: -webkit-sticky;
-  position: sticky;
-  display: none;
-  transition: max-height .4s ease-in-out;
-  max-height: 0;
+#burger-menu:enabled {
+  background-color: red;
 }
 
-#menu-btn:checked ~ #menu {
-  display: inline-block;
-  max-height: 240px;
+#nav-icon {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
 }
 
-#menu-btn:checked ~ #menu-icon #nav-icon {
-  background: transparent;
+#nav-icon:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  transform: translateY(-6px);
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
 }
 
-#menu-btn:checked ~ #menu-icon #nav-icon:before {
+#nav-icon:after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  transform: translateY(6px);
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-icon.close:before {
+  opacity: 1;
   top: 0;
   transform: rotate(-45deg);
 }
 
-#menu-btn:checked ~ #menu-icon #nav-icon:after {
+#nav-icon.close:after {
+  opacity: 1;
   top: 0;
   transform: rotate(45deg);
 }
 
-#nav-icon {
-  position: relative;
-  background-color: black;
-  height: 2px;
-  width: 20px;
-  display: block;
-  transition:  0.2s ease-out;
-  border-radius: 100px;
-  z-index: 999999;
+#nav-icon.close {
+  background-color: transparent;
 }
 
-#nav-icon:before {
-  position: absolute;
-  content: '';
-  background-color: black;
-  height: 100%;
+/* ======= menu toggle ===== */
+
+#menu.open {
+  display: inline-block;
+  background-color: #66da42;
+  z-index: 100;
+  max-height: 200px;
   width: 100%;
-  display: block;
-  transition: all 0.2s ease-out;
-  top: -6px;
+  margin-top: 1em;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
-#nav-icon:after {
-  position: absolute;
-  content: '';
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  display: block;
-  transition: all 0.2s ease-out;
-  top: 6px;
+@media screen and (min-width: 600px) {
+  #burger-menu {
+    display: none;
+    transition: all 0.2s ease;
+  }
+
+  #menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    align-items: center;
+  }
+
+  li:first-child {
+    padding-right: 1em;
+  }
 }
 
-/* checkbox */
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+  }
 
-#menu-btn {
-  display: none;
+  #menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  li {
+    margin-top: 1em;
+  }
+
+  #front-end {
+    display: none;
+  }
 }
 
 /* Animation Background */
 
-#animation-blobs{
+#animation-blobs {
   z-index: -1;
 }
 
@@ -17457,7 +17497,7 @@ video {
 }
 
 #blob_one {
-  transition: transform 7s ease-out ;
+  transition: transform 7s ease-out;
   animation: blobone 8s alternate-reverse infinite;
 }
 
@@ -17490,11 +17530,11 @@ video {
 }
 
 #blob_two {
-  transition: transform 9s linear ;
+  transition: transform 9s linear;
   animation: blobtwo 10s alternate-reverse infinite;
 }
 
-@-webkit-keyframes blobtwo{
+@-webkit-keyframes blobtwo {
   0% {
     transform: translate(149px, 370px);
   }
@@ -17508,7 +17548,7 @@ video {
   }
 }
 
-@keyframes blobtwo{
+@keyframes blobtwo {
   0% {
     transform: translate(149px, 370px);
   }
@@ -17523,12 +17563,12 @@ video {
 }
 
 #blob_three {
-  transition: transform 7s ease-in-out ;
+  transition: transform 7s ease-in-out;
   -webkit-animation: blobthree 12s alternate infinite;
           animation: blobthree 12s alternate infinite;
 }
 
-@-webkit-keyframes blobthree{
+@-webkit-keyframes blobthree {
   0% {
     transform: translate(-49px, 120px);
   }
@@ -17542,7 +17582,7 @@ video {
   }
 }
 
-@keyframes blobthree{
+@keyframes blobthree {
   0% {
     transform: translate(-49px, 120px);
   }
@@ -17557,7 +17597,7 @@ video {
 }
 
 #blob_four {
-  transition: transform 14s ease-out ;
+  transition: transform 14s ease-out;
   animation: blobfour 10s alternate-reverse infinite;
 }
 
@@ -17590,12 +17630,12 @@ video {
 }
 
 #blob_five {
-  transition: transform 17s ease-out ;
+  transition: transform 17s ease-out;
   -webkit-animation: blobfive 10s alternate infinite;
           animation: blobfive 10s alternate infinite;
 }
 
-@-webkit-keyframes blobfive{
+@-webkit-keyframes blobfive {
   0% {
     transform: translate(370px, 149px);
   }
@@ -17609,7 +17649,7 @@ video {
   }
 }
 
-@keyframes blobfive{
+@keyframes blobfive {
   0% {
     transform: translate(370px, 149px);
   }
@@ -17624,7 +17664,7 @@ video {
 }
 
 #blob_six {
-  transition: transform 7s ease-out ;
+  transition: transform 7s ease-out;
   animation: blobsix 8s alternate-reverse infinite;
 }
 
@@ -17634,7 +17674,7 @@ video {
   }
 
   50% {
-    transform: translate( -10px, 290px);
+    transform: translate(-10px, 290px);
   }
 
   100% {
@@ -17648,12 +17688,23 @@ video {
   }
 
   50% {
-    transform: translate( -10px, 290px);
+    transform: translate(-10px, 290px);
   }
 
   100% {
     transform: translate(150px, 485px);
   }
+}
+
+/* Projects Cards */
+
+#cards > div{
+  width: 320px;
+  height: 200px;
+  margin-top: 2em;
+  padding:2em;
+  background-color: #66da42;
+  max-width:100%;
 }
 
 @media (min-width: 480px) {
