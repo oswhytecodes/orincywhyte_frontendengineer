@@ -85,8 +85,8 @@
     text-align: center;
     transition: all 0.3s ease;
 }
-
-@media screen and (min-width: 600px) {
+/* ===== For Large screens ======= */
+@media screen and (min-width: 768px) {
     #burger-menu {
         display: none;
         transition: all 0.2s ease;
@@ -101,11 +101,11 @@
     }
     li:first-child {
         padding-right: 1em;
-    }
+    } 
 
 }
-
-@media screen and (max-width: 600px) {
+/* ========== For Small Screens ========== */
+@media screen and (max-width: 768px) {
     nav {
         display: block;
     }
@@ -276,8 +276,7 @@
 
 #cards > div{
     width: 320px;
-    height: 200px;
-    margin-top: 2em;
     background-color: #66da42;
+    margin-top: 2em;
     max-width:100%;
 }

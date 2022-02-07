@@ -8,9 +8,7 @@ module.exports = {
       center:true,
       padding: '1rem',
     }, 
-    colors: {
-'accentgreen': '#66da42',
-    },
+   
     screens: {
       sm: '480px',
       md: '768px',
@@ -22,7 +20,11 @@ module.exports = {
       cursive: ['Sacramento','cursive'],
       sans: ['Montserrat', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'accentgreen': '#66da42',
+            },
+    },
   },
   plugins: [
   ],
