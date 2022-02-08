@@ -32417,6 +32417,10 @@ video {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
+html {
+  height: 100%;
+}
+
 /* =========== hamburger ========== */
 
 #burger-menu {
@@ -32433,8 +32437,8 @@ video {
 
 #nav-icon {
   position: absolute;
-  width: 20px;
-  height: 2px;
+  width: 26px;
+  height: 3px;
   background-color: #000;
   display: block;
   border-radius: 100px;
@@ -32444,11 +32448,11 @@ video {
 #nav-icon:before {
   content: "";
   position: absolute;
-  width: 14px;
-  height: 2px;
+  width: 20px;
+  height: 3px;
   background-color: #000;
   display: block;
-  transform: translateY(-6px);
+  transform: translateY(-7px);
   border-radius: 100px;
   transition: all 0.3s ease-in-out;
 }
@@ -32456,11 +32460,11 @@ video {
 #nav-icon:after {
   content: "";
   position: absolute;
-  width: 14px;
-  height: 2px;
+  width: 20px;
+  height: 3px;
   background-color: #000;
   display: block;
-  transform: translateY(6px);
+  transform: translateY(7px);
   border-radius: 100px;
   transition: all 0.3s ease-in-out;
 }
@@ -32496,7 +32500,7 @@ video {
 
 /* ===== For Large screens ======= */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   #burger-menu {
     display: none;
     transition: all 0.2s ease;
