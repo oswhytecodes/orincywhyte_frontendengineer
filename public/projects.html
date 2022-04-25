@@ -1,152 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="main.js" defer></script>
     <title>Projects</title>
-</head>
+  </head>
 
-<body class="font-sans w-full h-full min-h-screen flex flex-col justify-between">
- <!-- ==================== Header ========================= -->
- <header class="bg-accentgreen shadow-md py-4">
-    <nav class="container md:flex md:justify-between md:items-center ">
+  <body
+    class="font-sans w-full h-full min-h-screen flex flex-col justify-between"
+  >
+    <!-- ==================== Header ========================= -->
+    <header class="bg-accentgreen shadow-md py-4">
+      <nav class="container md:flex md:justify-between md:items-center">
         <!-- <div>
             <a class="hover:text-green-800 text-2xl" href="index.html">orincy whyte </a>
         </div> -->
         <div>
-            <a class="hover:text-green-800 text-2xl" href="index.html"><img width="150px" src="./images/logo_.svg" alt="orincy whyte logo"> </a>
+          <a class="hover:text-green-800 text-2xl" href="index.html"
+            ><img
+              width="150px"
+              src="./images/logo_.svg"
+              alt="orincy whyte logo"
+            />
+          </a>
         </div>
-       
+
         <!-- Burger Menu -->
         <div id="burger-menu">
-            <span id="nav-icon"> </span>
+          <span id="nav-icon"> </span>
         </div>
         <!-- ====  -->
 
         <!-- Menu List -->
         <div class="m-auto">
-            <ul id="menu" class="flex justify-center items-center bg-accentgreen">
-                <li class="hover:text-green-800"> <a href="projects.html"> Projects </a> </li>
-                <li class="md:ml-12 hover:text-green-800"> <a href="about.html"> Connect </a> </li>
-            </ul>
+          <ul id="menu" class="flex justify-center items-center bg-accentgreen">
+            <li class="hover:text-green-800">
+              <a href="projects.html"> Projects </a>
+            </li>
+            <li class="md:ml-12 hover:text-green-800">
+              <a href="about.html"> Connect </a>
+            </li>
+          </ul>
         </div>
 
         <div>
-            <a class="hidden lg:flex justify-end hover:text-green-800" href="https://github.com/oswhyteknits/orincywhyte_frontendengineer">front-end engineer </a>
+          <a
+            class="hidden lg:flex justify-end hover:text-green-800"
+            href="https://github.com/oswhyteknits/orincywhyte_frontendengineer"
+            >front-end engineer
+          </a>
         </div>
-    </nav>
-</header>
-
+      </nav>
+    </header>
 
     <div class="container mt-8">
-        <h1 class="text-4xl w-auto text-center">projects</h1>
+      <h1 class="text-4xl w-auto text-center">projects</h1>
     </div>
 
-
-    <section class="container m-auto mt-4 md:flex gap-10 justify-between" id="projects">
-        <div id="cards" class="m-auto lg:flex gap-4">
-
-            <div class="m-auto rounded-xl shadow-md overflow-hidden bg-accentgreen/75  relative top-0 transition duration-300  transform hover:scale-105 ease-in-out" id="cardtwo">
-                
-            <a href="https://oswhyteknits.github.io/portfolio/index.html">   <img class="" src="images/blackwoman.jpg" alt="A Black Woman Made Me logo"> </a> 
-                <div class="mx-4  pt-2 ">
-                    <h2 class="font-bold text-xl"> A Black Woman Made Me</h2>
-                    <span class=""></span>
-                    <p class="mt-2"> Dedicated to highlighting Black female creators.</p>
-                </div>
-               
-                <div class="flex mx-4 mt-2  ">
-                    <a class="text-md font-medium mr-4 hover:text-gray-100 text-green-900" href="https://oswhyteknits.github.io/portfolio/">Live</a>
-                    <a class="text-md font-medium hover:text-gray-100 text-green-900" href="https://github.com/oswhyteknits/portfolio">Code</a>
-                    <span class="ml-4">|</span>
-                    <div id="tech-stacks" class="ml-4 mb-4 flex justify-start items-center">
-                        <h4 class="pr-4 font-thin">Tech Stacks </h4>
-                        <img width="22px" src="images/html.svg" alt="html icon">
-                        <img width="25px" src="images/css.svg" alt="css icon">
-                    </div>
-                </div>
+    <section
+      class="container m-auto mt-4 md:flex gap-10 justify-between"
+      id="projects"
+    >
+      <div id="cards" class="m-auto lg:flex gap-4">
+        <!-- EMAIL CAMPAIGN PROJECT -->
+        <div
+          class="m-auto rounded-xl shadow-md overflow-hidden bg-accentgreen/75 relative top-0 transition duration-300 transform hover:scale-105 ease-in-out"
+          id="cardone"
+        >
+          <a href="https://oswhyteknits.github.io/emailcampaign/">
+            <img class="" src="images/email.png" alt="" />
+          </a>
+          <div class="mx-4 pt-2">
+            <h2 class="font-bold text-xl">Email Campaigns</h2>
+            <span class=""></span>
+            <p class="mt-2">
+              Layout is where I shine as a developer. The Email Campaign project
+              takes three variety of emails; a promotional email, receipt
+              transaction and newsletter. Designed to showcase my email
+              development skills.
+            </p>
+          </div>
+          <div class="flex justify-center mx-4 mt-4 mb-2">
+            <a
+              class="mr-4 hover:text-gray-400 text-gray-900"
+              href="https://oswhyteknits.github.io/emailcampaign/"
+            >
+              <button class="text-lg font-bold bg-green-100 px-2 py-.5 rounded">
+                Live
+              </button>
+            </a>
+            <a
+              class="text-md font-lg hover:text-gray-400 text-gray-50"
+              href="https://github.com/oswhyteknits/emailcampaign"
+            >
+              <button class="text-lg font-bold bg-green-900 px-2 py-.5 rounded">
+                Code
+              </button></a
+            >
+            <span class="ml-4">|</span>
+            <div
+              id="tech-stacks"
+              class="ml-4 mb-4 flex justify-start items-center"
+            >
+              <img width="22px" src="images/html.svg" alt="" />
+              <img width="25px" src="images/css.svg" alt="" />
             </div>
-
-            <div class="m-auto rounded-xl shadow-md overflow-hidden bg-accentgreen/75 relative top-0 transition duration-300  transform hover:scale-105 ease-in-out" id="cardone">
-                
-             <a href="https://oswhyteknits.github.io/emailcampaign/">   <img class="" src="images/email.png" alt=""> </a>
-                <div class="mx-4 pt-2 ">
-                    <h2 class="font-bold text-xl"> Email Campaigns</h2>
-                    <span class=""></span>
-                    <p class="mt-2"> Designed to showcase my email development skills.</p>
-                </div>
-                <div class="flex mx-4 mt-2  ">
-                    <a class="text-md font-medium mr-4 hover:text-gray-100 text-green-900" href="https://oswhyteknits.github.io/emailcampaign/">Live</a>
-                    <a class="text-md font-medium hover:text-gray-100 text-green-900" href="https://github.com/oswhyteknits/emailcampaign">Code</a>
-                    <span class="ml-4">|</span>
-                    <div id="tech-stacks" class="ml-4 mb-4 flex justify-start items-center">
-                        <h4 class="pr-4 font-thin">Tech Stacks </h4>
-                        <img width="22px" src="images/html.svg" alt="">
-                        <img width="25px" src="images/css.svg" alt="">
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class=" m-auto rounded-xl shadow-md overflow-hidden bg-accentgreen/75 relative top-0 
-            transition duration-300  transform hover:scale-105 ease-in-out" id="cardthree">
-                
-              <a href="https://oswhyteknits.github.io/BackgroundColorChange/">  <img class="" src="images/colorchange.svg" alt=""> </a>
-                <div class="mx-4 pt-2 ">
-                    <h2 class="font-bold text-xl">Background Color Change</h2>
-                    <span class=""></span>
-                    <p class="mt-2"> Manipulating the DOM to change the color of the background.</p>
-                </div>
-                <div class="flex mx-4 mt-2">
-                    <a class="text-md font-medium mr-3 hover:text-gray-100 text-green-900" href="https://oswhyteknits.github.io/BackgroundColorChange/">Live</a>
-                    <a class="text-md font-medium hover:text-gray-100 text-green-900" href="https://github.com/oswhyteknits/BackgroundColorChange">Code</a>
-                    <span class="ml-3">|</span>
-
-                    <div id="tech-stacks" class="ml-2 mb-4 flex justify-start items-center">
-                        <h4 class="pr-2 font-thin">Tech Stacks </h4>
-                        <img width="22px" src="images/html.svg" alt="">
-                        <img width="25px" src="images/css.svg" alt="">
-                        <img width="25px" src="images/js.svg" alt="">
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-  </section>
+        <!-- THE BIGGER NUMBER PROJECT -->
+        <div
+          class="m-auto rounded-xl shadow-md overflow-hidden bg-accentgreen/75 relative top-0 transition duration-300 transform hover:scale-105 ease-in-out"
+          id="cardtwo"
+        >
+          <a href="https://oswhyteknits.github.io/portfolio/index.html">
+            <img
+              class=""
+              src="images/blackwoman.jpg"
+              alt="A Black Woman Made Me logo"
+            />
+          </a>
+          <div class="mx-4 pt-2">
+            <h2 class="font-bold text-xl">The Bigger Number</h2>
+            <span class=""></span>
+            <p class="mt-2">
+              What is the bigger number. Manipulating the DOM to pick which
+              number is bigger, by turning the box purple.
+            </p>
+          </div>
 
-  <div>
-    <a href="./about.html"><img class="mt-6 max-w-full flex justify-center items-center mx-auto transition duration-300 transform hover:scale-125 ease-in-out" width="70px" src="images/blobconnect-01.svg" alt=""></a>
-</div>
+          <div class="flex justify-center mx-4 mt-4 mb-2">
+            <a
+              class="mr-4 hover:text-gray-400 text-gray-900"
+              href="https://oswhyteknits.github.io/portfolio/"
+            >
+              <button class="text-lg font-bold bg-green-100 px-2 py-.5 rounded">
+                Live
+              </button>
+            </a>
 
-   <!-- ================================ Footer ============================ -->
-   <footer class="bg-accentgreen  mt-20 py-4">
-    <nav class="container flex flex-row flex-wrap justify-center md:justify-between items-center">
+            <a
+              class="text-md font-lg hover:text-gray-400 text-gray-50"
+              href="https://github.com/oswhyteknits/portfolio"
+            >
+              <button class="text-lg font-bold bg-green-900 px-2 py-.5 rounded">
+                Code
+              </button></a
+            >
+
+            <span class="ml-4">|</span>
+            <div
+              id="tech-stacks"
+              class="ml-4 mb-4 flex justify-start items-center"
+            >
+              <img width="22px" src="images/html.svg" alt="html icon" />
+              <img width="25px" src="images/css.svg" alt="css icon" />
+            </div>
+          </div>
+        </div>
+        <!-- BACKGROUND COLOR CHANGER PROJECT -->
+        <div
+          class="m-auto rounded-xl shadow-md overflow-hidden bg-accentgreen/75 relative top-0 transition duration-300 transform hover:scale-105 ease-in-out"
+          id="cardthree"
+        >
+          <a href="https://oswhyteknits.github.io/BackgroundColorChange/">
+            <img class="" src="images/colorchange.svg" alt="" />
+          </a>
+          <div class="mx-4 pt-2">
+            <h2 class="font-bold text-xl">Background Color Change</h2>
+            <span class=""></span>
+            <p class="mt-2">
+              One fun thing about Javascript, is being able to manipulate the
+              DOM. Click the button and watch the colors change.
+            </p>
+          </div>
+
+          <div class="flex justify-center mx-4 mt-4 mb-2">
+            <a
+              class="mr-4 hover:text-gray-400 text-gray-900"
+              href="https://oswhyteknits.github.io/BackgroundColorChange/"
+            >
+              <button class="text-lg font-bold bg-gray-300 px-2 py-.5 rounded">
+                Live
+              </button>
+            </a>
+            <a
+              class="text-md font-lg hover:text-gray-400 text-gray-50"
+              href="https://github.com/oswhyteknits/BackgroundColorChange"
+            >
+              <button class="text-lg font-bold bg-green-900 px-2 py-.5 rounded">
+                Code
+              </button></a
+            >
+            <span class="ml-3">|</span>
+
+            <div
+              id="tech-stacks"
+              class="ml-2 mb-4 flex justify-start items-center"
+            >
+              <img width="22px" src="images/html.svg" alt="" />
+              <img width="25px" src="images/css.svg" alt="" />
+              <img width="25px" src="images/js.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- A BLACK WOMAN MADE ME PROJECT -->
+        <div
+          class="m-auto rounded-xl shadow-md overflow-hidden bg-accentgreen/75 relative top-0 transition duration-300 transform hover:scale-105 ease-in-out"
+          id="cardtwo"
+        >
+          <a href="https://oswhyteknits.github.io/portfolio/index.html">
+            <img
+              class=""
+              src="images/blackwoman.jpg"
+              alt="A Black Woman Made Me logo"
+            />
+          </a>
+          <div class="mx-4 pt-2">
+            <h2 class="font-bold text-xl">A Black Woman Made Me</h2>
+            <span class=""></span>
+            <p class="mt-2">
+              Coming soon... A much newer project dedicated to highlighting
+              Black female creators. This idea came a year ago, because I wanted
+              to creat a space for Black women in creative spaces.
+            </p>
+          </div>
+
+          <div class="flex justify-center mx-4 mt-4 mb-2">
+            <a
+              class="mr-4 hover:text-gray-400 text-gray-900"
+              href="https://oswhyteknits.github.io/portfolio/"
+            >
+              <button class="text-lg font-bold bg-green-100 px-2 py-.5 rounded">
+                Live
+              </button>
+            </a>
+
+            <a
+              class="text-md font-lg hover:text-gray-400 text-gray-50"
+              href="https://github.com/oswhyteknits/portfolio"
+            >
+              <button class="text-lg font-bold bg-green-900 px-2 py-.5 rounded">
+                Code
+              </button></a
+            >
+
+            <span class="ml-4">|</span>
+            <div
+              id="tech-stacks"
+              class="ml-4 mb-4 flex justify-start items-center"
+            >
+              <img width="22px" src="images/html.svg" alt="html icon" />
+              <img width="25px" src="images/css.svg" alt="css icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <a class="flex justify-center mt-6" href="./about.html"
+        ><button
+          class="inline text-lg font-bold   bg-accentgreen px-4 py-2 rounded"> Connect</button> </a>
+    </div>
+
+    <!-- ================================ Footer ============================ -->
+    <footer class="bg-accentgreen mt-20 py-4">
+      <nav
+        class="container flex flex-row flex-wrap justify-center md:justify-between items-center"
+      >
         <div>
-            <a class="font-sans font-bold mx-4" href="index.html">orincy whyte </a>
+          <a class="font-sans font-bold mx-4" href="index.html"
+            >orincy whyte
+          </a>
         </div>
 
         <div>
-            <a class="mx-4 text-sm font-light md:mt-auto" href="https://github.com/oswhyteknits">front-end engineer </a>
+          <a
+            class="mx-4 text-sm font-light md:mt-auto"
+            href="https://github.com/oswhyteknits"
+            >front-end engineer
+          </a>
         </div>
 
         <div class="flex justify-center items-center z-50 mx-4 mt-2 md:mt-auto">
-            <a href="mailto:orincywhyte@gmail.com"> <img width="22px" class="mr-4" src="./images/mail.svg" alt="email icon"> </a>
-            <a href="https://github.com/oswhyteknits"><img width="20px" class="mr-4" src="images/github.svg"
-                    alt="github icon"></a>
-            <a href="https://www.instagram.com/orincywhytedesigns/"><img width="20px" class="mr-4"
-                    src="images/instagram.svg" alt="instagram icon"></a>
-            <a href="https://www.linkedin.com/in/orincy-whyte-432a34142/"><img width="20px" class="mr-4"
-                    src="images/linkedin.svg" alt="linkedin icon"></a>
-            <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg"><img width="20px"
-                    src="images/youtube.svg" alt="youtube icon"></a>
-        
+          <a href="mailto:orincywhyte@gmail.com">
+            <img
+              width="22px"
+              class="mr-4"
+              src="./images/mail.svg"
+              alt="email icon"
+            />
+          </a>
+          <a href="https://github.com/oswhyteknits"
+            ><img
+              width="20px"
+              class="mr-4"
+              src="images/github.svg"
+              alt="github icon"
+          /></a>
+          <a href="https://www.instagram.com/orincywhytedesigns/"
+            ><img
+              width="20px"
+              class="mr-4"
+              src="images/instagram.svg"
+              alt="instagram icon"
+          /></a>
+          <a href="https://www.linkedin.com/in/orincy-whyte-432a34142/"
+            ><img
+              width="20px"
+              class="mr-4"
+              src="images/linkedin.svg"
+              alt="linkedin icon"
+          /></a>
+          <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg"
+            ><img width="20px" src="images/youtube.svg" alt="youtube icon"
+          /></a>
         </div>
-    </nav>
-</footer>
-</body>
-
+      </nav>
+    </footer>
+  </body>
 </html>

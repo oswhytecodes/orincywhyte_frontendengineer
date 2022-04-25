@@ -1,105 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="main.js" defer></script>
     <title>Let's Connect</title>
-</head>
-<body class="font-sans w-full h-full min-h-screen flex flex-col justify-between" >
+  </head>
+  <body
+    class="font-sans w-full h-full min-h-screen flex flex-col justify-between"
+  >
     <!-- ==================== Header ========================= -->
     <header class="bg-accentgreen shadow-md py-4">
-        <nav class="container md:flex md:justify-between md:items-center ">
-            <!-- <div>
+      <nav class="container md:flex md:justify-between md:items-center">
+        <!-- <div>
                 <a class="hover:text-green-800 text-2xl" href="index.html">orincy whyte </a>
             </div> -->
-            <div>
-                <a class="hover:text-green-800 text-2xl" href="index.html"><img width="150px" src="./images/logo_.svg" alt="orincy whyte logo"> </a>
-            </div>
-           
-            <!-- Burger Menu -->
-            <div id="burger-menu">
-                <span id="nav-icon"> </span>
-            </div>
-            <!-- ====  -->
-    
-            <!-- Menu List -->
-            <div class="m-auto">
-                <ul id="menu" class="flex justify-center items-center bg-accentgreen">
-                    <li class="hover:text-green-800"> <a href="projects.html"> Projects </a> </li>
-                    <li class="md:ml-12 hover:text-green-800"> <a href="about.html"> Connect </a> </li>
-                </ul>
-            </div>
-    
-            <div>
-                <a class="hidden lg:flex justify-end hover:text-green-800" href="https://github.com/oswhyteknits">front-end engineer </a>
-            </div>
-        </nav>
-    </header>
-    
-    <div class="container mt-8">
-        <h1 class="text-5xl w-auto text-center">about</h1>
-    </div>
-    <!-- ===================== about me =============== -->
-    <section id="about" class="container mt-4 md:flex md:max-w-xl md:mt-16 gap-8 justify-between m-auto">
-        <div class="flex justify-center items-center m-auto">
-            <div id="greenbox" class="w-32 h-48 bg-accentgreen grid absolute"> </div>
-            <img class="top-8 left-10 relative w-32 sm:max-w-xs md:w-32 " src="images/about.jpg" alt="">
+        <div>
+          <a class="hover:text-green-800 text-2xl" href="index.html"
+            ><img
+              width="150px"
+              src="./images/logo_.svg"
+              alt="orincy whyte logo"
+            />
+          </a>
+        </div>
+
+        <!-- Burger Menu -->
+        <div id="burger-menu">
+          <span id="nav-icon"> </span>
+        </div>
+        <!-- ====  -->
+
+        <!-- Menu List -->
+        <div class="m-auto">
+          <ul id="menu" class="flex justify-center items-center bg-accentgreen">
+            <li class="hover:text-green-800">
+              <a href="projects.html"> Projects </a>
+            </li>
+            <li class="md:ml-12 hover:text-green-800">
+              <a href="about.html"> Connect </a>
+            </li>
+          </ul>
         </div>
 
         <div>
-            <p class="text-s mt-20 md:max-w-md md:text-lg md:mt-0 md:ml-6  ">
-                A Front-End Engineer based in the US and I am ready to get my feet wet in the tech
-                industry. I am a quick learner, very creative and constantly building.
-
-                My strongest skills involve me creating and building design layouts and graphics. Consider me when searching for a creative developer. 
-            </p>
+          <a
+            class="hidden lg:flex justify-end hover:text-green-800"
+            href="https://github.com/oswhyteknits"
+            >front-end engineer
+          </a>
         </div>
+      </nav>
+    </header>
+
+    <div class="container mt-8">
+      <h1 class="text-5xl w-auto text-center">about</h1>
+    </div>
+    <!-- ===================== about me =============== -->
+    <section
+      id="about"
+      class="container mt-4 md:flex md:max-w-xl md:mt-16 gap-8 justify-between m-auto"
+    >
+      <div class="flex justify-center items-center m-auto">
+        <div id="greenbox" class="w-32 h-48 bg-accentgreen grid absolute"></div>
+        <img
+          class="top-8 left-10 relative w-32 sm:max-w-xs md:w-32"
+          src="images/about.jpg"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <p class="text-s mt-20 md:max-w-md md:text-lg md:mt-0 md:ml-6">
+          A Front-End Engineer based in the US and I am ready to get my feet wet
+          in the tech industry. I am a quick learner, very creative and
+          constantly building. My strongest skills involve me creating and
+          building design layouts and graphics. Consider me when searching for a
+          creative developer.
+        </p>
+      </div>
     </section>
-   
-<hr class="mt-6">
-<section class="container mx-auto max-w-s flex-col justify-center mt-10">
 
-<div class="flex flex-col m-auto max-w-sm justify-center ">
-    
-    <label for="email"> Name</label> 
-    <input class="px-2 py-1 rounded-md bg-gray-200" id="name" name="name" type="text">  <br> 
-    <label for="email"> Email Address</label> 
-    <input class="px-2 py-1 rounded-md bg-gray-200" id="email" name="email" type="text">  <br> 
-    
-    <a class="inline-block bg-accentgreen max-w-sm m-auto justify-center text-neutral-200 rounded px-2 py-1 mt-2 transition duration-300 transform hover:scale-105 hover:text-gray-100" href="#">Sign Up</a>
-    
-</div>
+    <hr class="mt-6" />
+    <section class="container mx-auto max-w-s flex-col justify-center mt-10">
+      <div class="flex flex-col m-auto max-w-sm justify-center">
+        <label for="email"> Name</label>
+        <input
+          class="px-2 py-1 rounded-md bg-gray-200"
+          id="name"
+          name="name"
+          type="text"
+        />
+        <br />
+        <label for="email"> Email Address</label>
+        <input
+          class="px-2 py-1 rounded-md bg-gray-200"
+          id="email"
+          name="email"
+          type="text"
+        />
+        <br />
 
-</section>
+        <a
+          class="inline-block text-lg font-bold bg-accentgreen max-w-sm m-auto justify-center text-neutral-200 rounded px-2 py-1 mt-2 transition duration-300 transform hover:scale-105 hover:text-gray-100"
+          href="#"
+          >Sign Up</a
+        >
+      </div>
+    </section>
 
+    <!-- ================================ Footer ============================ -->
+    <footer class="bg-accentgreen mt-20 py-4">
+      <nav
+        class="container flex flex-row flex-wrap justify-center md:justify-between items-center"
+      >
+        <div>
+          <a class="font-sans font-bold mx-4" href="index.html"
+            >orincy whyte
+          </a>
+        </div>
 
-      <!-- ================================ Footer ============================ -->
-    <footer class="bg-accentgreen  mt-20 py-4">
-        <nav class="container flex flex-row flex-wrap justify-center md:justify-between items-center">
-            <div>
-                <a class="font-sans font-bold mx-4" href="index.html">orincy whyte </a>
-            </div>
+        <div>
+          <a
+            class="mx-4 text-sm font-light md:mt-auto"
+            href="https://github.com/oswhyteknits"
+            >front-end engineer
+          </a>
+        </div>
 
-            <div>
-                <a class="mx-4 text-sm font-light md:mt-auto" href="https://github.com/oswhyteknits">front-end engineer </a>
-            </div>
-
-            <div class="flex justify-center items-center z-50 mx-4 mt-2 md:mt-auto">
-                <a href="mailto:orincywhyte@gmail.com"> <img width="22px" class="mr-4" src="./images/mail.svg" alt="email icon"> </a>
-                <a href="https://github.com/oswhyteknits"><img width="20px" class="mr-4" src="images/github.svg"
-                        alt="github icon"></a>
-                <a href="https://www.instagram.com/orincywhytedesigns/"><img width="20px" class="mr-4"
-                        src="images/instagram.svg" alt="instagram icon"></a>
-                <a href="https://www.linkedin.com/in/orincy-whyte-432a34142/"><img width="20px" class="mr-4"
-                        src="images/linkedin.svg" alt="linkedin icon"></a>
-                <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg"><img width="20px"
-                        src="images/youtube.svg" alt="youtube icon"></a>
-            
-            </div>
-        </nav>
+        <div class="flex justify-center items-center z-50 mx-4 mt-2 md:mt-auto">
+          <a href="mailto:orincywhyte@gmail.com">
+            <img
+              width="22px"
+              class="mr-4"
+              src="./images/mail.svg"
+              alt="email icon"
+            />
+          </a>
+          <a href="https://github.com/oswhyteknits"
+            ><img
+              width="20px"
+              class="mr-4"
+              src="images/github.svg"
+              alt="github icon"
+          /></a>
+          <a href="https://www.instagram.com/orincywhytedesigns/"
+            ><img
+              width="20px"
+              class="mr-4"
+              src="images/instagram.svg"
+              alt="instagram icon"
+          /></a>
+          <a href="https://www.linkedin.com/in/orincy-whyte-432a34142/"
+            ><img
+              width="20px"
+              class="mr-4"
+              src="images/linkedin.svg"
+              alt="linkedin icon"
+          /></a>
+          <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg"
+            ><img width="20px" src="images/youtube.svg" alt="youtube icon"
+          /></a>
+        </div>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
