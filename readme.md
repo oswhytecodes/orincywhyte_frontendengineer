@@ -2,7 +2,7 @@
 
 Personal Portfolio Project from Codecademy \
 Journey to Front-End \
-https://oswhyte.github.io/orincywhyte_frontendengineer/ 
+https://oswhytecodes.github.io/orincywhyte_frontendengineer/public/
 
 <img width="994" alt="Screen Shot 2022-06-06 at 10 28 59 PM" src="https://user-images.githubusercontent.com/92553207/172286353-3aa65b3c-1b04-44f1-8cc6-f058d83f3d76.png">
 
